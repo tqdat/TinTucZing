@@ -129,7 +129,7 @@ $alias = $tintucs['alias'];
                                     list ($id, $ten, $tenkhongdau) = explode(':', $loai);
                                 ?>
                                 <li class="list-group-item">
-                                    <a href="<?=$tenkhongdau?>-<?=$id?>"><?=$ten ?></a>
+                                    <a href="loaitin.php?alias=<?=$tenkhongdau ?>&id_loai=<?=$id ?>"><?=$ten ?></a>
                                 </li>
                                 <?php
                                 }
@@ -154,7 +154,7 @@ $alias = $tintucs['alias'];
                             <div class="row-item row">
                         <div class="col-md-3">
 
-                            <a href="<?=$alias->TenKhongDau?>/<?=$tin->TieuDeKhongDau?>-<?=$tin->id?>.html">
+                            <a href="chitiet.php?loai_tin=<?=$alias->TenKhongDau?>&alias=<?=$tin->TieuDeKhongDau?>&id_tin=<?=$tin->id?>">
                                 <br>
                                 <img width="200px" height="200px" class="img-responsive" src="public/image/tintuc/<?=$tin->Hinh?>" alt="">
                             </a>
@@ -163,7 +163,7 @@ $alias = $tintucs['alias'];
                         <div class="col-md-9">
                             <h3><?=$tin->TieuDe?></h3>
                             <p><?=$tin->TomTat?></p>
-                            <a class="btn btn-primary" href="<?=$alias->TenKhongDau?>/<?=$tin->TieuDeKhongDau?>-<?=$tin->id?>.html">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                            <a class="btn btn-primary" href="chitiet.php?loai_tin=<?=$alias->TenKhongDau?>&alias=<?=$tin->TieuDeKhongDau?>&id_tin=<?=$tin->id?>">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
                         </div>
                         <div class="break"></div>
                     </div>
